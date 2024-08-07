@@ -44,7 +44,7 @@ product1.onclick= function(){
 sub.onclick=function(){
     sub=product*count
     finalprice.textContent=(`${sub}$`);
-    if (sub==0){
+    if (sub==0 || sub<0){
         alert('you have no money or you put nothing in the cart');
 }
     else{
